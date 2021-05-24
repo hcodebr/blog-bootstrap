@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Bootstrap 5</title>
+</head>
+<body>
+
+  <main class="d-flex justify-content-center">
+
+    <div class="card" style="width: 20rem;">
+      <div class="card-body">
+        <h5 class="card-title">Atualizações no Sistema</h5>
+        <p class="card-text">Tivemos atualizações em nosso Sistema na última semana. Clique no botão abaixo para saber mais</p>
+        <a class="btn btn-success" data-bs-toggle="offcanvas" href="#meuOffCanvas" role="button" aria-controls="meuOffCanvas">Ver atualizações</a>
+      </div>
+    </div>
+
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="meuOffCanvas" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasLabel">Atualização feita</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          Na última semana nós fizemos uma alteração em nosso sistema. Confira abaixo as novidades
+        </div>
+    </div>
+    
+  </main>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Bootstrap 5</title>
+    <style>
+        form .form-floating {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+  <main class="d-flex align-items-center flex-column" style="width: 50vw">
+
+    <h2>Formulários no Bootstrap 5</h2>
+
+    <form>
+        
+        <div class="row">
+            <label for="primeiroNome" class="form-label col-5">Primeiro Nome</label>
+            <div class="col-7">
+                <input type="text" class="form-control" id="primeiroNome" />
+            </div>
+        </div>
+        <div class="row">
+            <label for="sobrenome" class="form-label col-5">Sobrenome</label>
+            <div class="col-7">
+                <input type="text" class="form-control" id="sobrenome" />
+            </div>
+        </div>
+        
+        <div class="form-floating">
+            <input type="email" class="form-control" id="email" placeholder="eu@exemplo.com" />
+            <label for="email">Endereço de Email</label>
+        </div>
+
+        <div class="form-floating">
+            <input type="password" class="form-control" id="password" placeholder="Sua senha" />
+            <label for="password">Senha</label>
+        </div>
+
+        <div class="form-floating">
+            <select id="selectEstado" class="form-select">
+                <option value="" selected>Selecione um estado</option>
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+            </select>
+            <label for="selectEstado">Estado de residência</label>
+        </div>
+        
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="lembrar-se">
+            <label class="form-check-label" for="lembrar-se">
+              Lembrar de mim
+            </label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="maioridade" id="checkUm">
+            <label class="form-check-label" for="checkUm">
+              Menor de idade
+            </label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="maioridade" id="checkDois">
+            <label class="form-check-label" for="checkDois">
+              Maior de idade
+            </label>
+        </div>
+
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="notificacoes">
+            <label class="form-check-label" for="notificacoes">Habilitar notificações</label>
+        </div>       
+
+        <div>
+            <label for="photo" class="form-label">Adicionar foto ao seu perfil</label>
+            <input class="form-control" type="file" id="photo">
+        </div>
+
+    </form>
+    
+  </main>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
